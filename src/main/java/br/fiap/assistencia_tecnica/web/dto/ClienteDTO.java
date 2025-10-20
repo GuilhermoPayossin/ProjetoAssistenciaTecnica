@@ -1,10 +1,15 @@
 package br.fiap.assistencia_tecnica.web.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.Positive;
+
 public class ClienteDTO {
+    @JsonProperty(access = JsonProperty.Access.AUTO)
     private Long id;
     private String nome;
     private String email;
     private String telefone;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String senha;
 
     public Long getId() {
