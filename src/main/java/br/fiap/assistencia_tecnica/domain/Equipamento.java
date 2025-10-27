@@ -1,9 +1,11 @@
 package br.fiap.assistencia_tecnica.domain;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 
+@Data
 @Entity
 @Table(name = "JAVA_EQUIPAMENTO")
 public class Equipamento {
